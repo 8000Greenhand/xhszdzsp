@@ -1,0 +1,24 @@
+{
+  "name": "xhs-ai-video-maker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Remotion-based vertical video generator for Xiaohongshu AI learning-log videos.",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render src/index.ts AiLearningVideo out/episode-001.mp4",
+    "preview": "remotion preview src/index.ts AiLearningVideo",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "latest",
+    "@remotion/player": "latest",
+    "remotion": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}
