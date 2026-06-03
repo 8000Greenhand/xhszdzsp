@@ -23,5 +23,6 @@ export type LandscapeEpisode = {
   fps: number;
   width: number;
   height: number;
+  audio?: string;
   scenes: LandscapeScene[];
 };
