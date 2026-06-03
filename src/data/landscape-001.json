@@ -4,71 +4,14 @@
   "fps": 30,
   "width": 1920,
   "height": 1080,
+  "audio": "episodes/001/assets/voice-001.m4a",
   "scenes": [
-    {
-      "kind": "intro",
-      "durationInFrames": 120,
-      "chapter": "01 / 开场",
-      "title": "我用 AI 跑通了一个小红书视频生成器",
-      "subtitle": "不是一键生成，而是把流程拆成模板",
-      "callout": "先看结果",
-      "caption": "我之前一直以为，AI 做视频就是找一个工具一键生成。后来我发现，真正稳定的方法不是这样。"
-    },
-    {
-      "kind": "screen",
-      "durationInFrames": 150,
-      "chapter": "02 / 存代码",
-      "title": "先把视频生成器放进 GitHub",
-      "callout": "代码不丢，方便迭代",
-      "screenMedia": "episodes/001/assets/01-github.png",
-      "screenMediaType": "image",
-      "caption": "这次我先用 ChatGPT 设计流程和代码结构，再把项目放到 GitHub 里保存。"
-    },
-    {
-      "kind": "screen",
-      "durationInFrames": 150,
-      "chapter": "03 / 本地项目",
-      "title": "本地项目里已经有完整结构",
-      "callout": "不是剪辑工程，是代码项目",
-      "screenMedia": "episodes/001/assets/04-project-folder.png",
-      "screenMediaType": "image",
-      "caption": "它不是剪映工程，而是一个可以反复使用的代码项目，里面有模板、配置和输出目录。"
-    },
-    {
-      "kind": "steps",
-      "durationInFrames": 180,
-      "chapter": "04 / 分工",
-      "title": "这套流程里，每个工具各做一件事",
-      "steps": ["ChatGPT 负责设计和分镜", "GitHub 负责保存代码", "Codex 负责本地执行", "Remotion 负责渲染视频"],
-      "caption": "ChatGPT 负责设计和分镜，GitHub 保存代码，Codex 在本地执行，最后 Remotion 渲染出视频。"
-    },
-    {
-      "kind": "screen",
-      "durationInFrames": 150,
-      "chapter": "05 / 预览模板",
-      "title": "现在已经有两个视频模板",
-      "callout": "竖屏短方法 + 横屏教程",
-      "screenMedia": "episodes/001/assets/02-remotion.png",
-      "screenMediaType": "image",
-      "caption": "现在 Remotion Studio 里已经能看到两个模板，一个做竖屏短方法，一个做横屏电脑教程。"
-    },
-    {
-      "kind": "screen",
-      "durationInFrames": 150,
-      "chapter": "06 / 输出结果",
-      "title": "最后可以直接导出 MP4",
-      "callout": "模板跑通了",
-      "screenMedia": "episodes/001/assets/03-out-folder.png",
-      "screenMediaType": "image",
-      "caption": "渲染完成后，输出文件夹里会生成竖屏和横屏两个 MP4，这说明整个流程已经跑通。"
-    },
-    {
-      "kind": "summary",
-      "durationInFrames": 150,
-      "chapter": "07 / 总结",
-      "title": "所以 AI 做视频的关键不是一键生成",
-      "bullets": ["先把内容拆清楚", "再把视频模板固定下来", "最后让工具稳定生成"],
-      "caption": "所以我现在的理解是，AI 做视频的关键不是一键生成，而是先把内容拆清楚，再把模板固定下来。"
-    }
+    {"kind": "intro", "durationInFrames": 270, "chapter": "01 / 开场", "title": "我用 AI 跑通了一个小红书视频生成器", "subtitle": "不是一键生成，而是把流程拆成模板", "callout": "先看结果", "caption": "我之前一直以为，AI 做视频就是找一个工具一键生成。后来我发现，真正稳定的方法不是这样。"},
+    {"kind": "screen", "durationInFrames": 300, "chapter": "02 / 存代码", "title": "先把视频生成器放进 GitHub", "callout": "代码不丢，方便迭代", "screenMedia": "episodes/001/assets/01-github.png", "screenMediaType": "image", "caption": "这次我先用 ChatGPT 设计流程和代码结构，再把项目放到 GitHub 里保存。"},
+    {"kind": "screen", "durationInFrames": 270, "chapter": "03 / 本地项目", "title": "本地项目里已经有完整结构", "callout": "不是剪辑工程，是代码项目", "screenMedia": "episodes/001/assets/04-project-folder.png", "screenMediaType": "image", "caption": "它不是剪映工程，而是一个可以反复使用的代码项目，里面有模板、配置和输出目录。"},
+    {"kind": "steps", "durationInFrames": 330, "chapter": "04 / 分工", "title": "这套流程里，每个工具各做一件事", "steps": ["ChatGPT 负责设计和分镜", "GitHub 负责保存代码", "Codex 负责本地执行", "Remotion 负责渲染视频"], "caption": "ChatGPT 负责设计和分镜，GitHub 保存代码，Codex 在本地执行，最后 Remotion 渲染出视频。"},
+    {"kind": "screen", "durationInFrames": 270, "chapter": "05 / 预览模板", "title": "现在已经有两个视频模板", "callout": "竖屏短方法 + 横屏教程", "screenMedia": "episodes/001/assets/02-remotion.png", "screenMediaType": "image", "caption": "现在 Remotion Studio 里已经能看到两个模板，一个做竖屏短方法，一个做横屏电脑教程。"},
+    {"kind": "screen", "durationInFrames": 270, "chapter": "06 / 输出结果", "title": "最后可以直接导出 MP4", "callout": "模板跑通了", "screenMedia": "episodes/001/assets/03-out-folder.png", "screenMediaType": "image", "caption": "渲染完成后，输出文件夹里会生成竖屏和横屏两个 MP4，这说明整个流程已经跑通。"},
+    {"kind": "summary", "durationInFrames": 240, "chapter": "07 / 总结", "title": "所以 AI 做视频的关键不是一键生成", "bullets": ["先把内容拆清楚", "再把视频模板固定下来", "最后让工具稳定生成"], "caption": "所以我现在的理解是，AI 做视频的关键不是一键生成，而是先把内容拆清楚，再把模板固定下来。"}
   ]
 }
