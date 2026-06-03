@@ -1,5 +1,7 @@
 export type LandscapeSceneKind = 'intro' | 'screen' | 'steps' | 'summary';
 
+export type ScreenMediaType = 'image' | 'video';
+
 export type LandscapeScene = {
   kind: LandscapeSceneKind;
   durationInFrames: number;
@@ -9,6 +11,8 @@ export type LandscapeScene = {
   callout?: string;
   caption?: string;
   screenNote?: string;
+  screenMedia?: string;
+  screenMediaType?: ScreenMediaType;
   steps?: string[];
   bullets?: string[];
 };
