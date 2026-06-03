@@ -1,4 +1,4 @@
-import {AbsoluteFill, Sequence, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Img, Sequence, Video, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import landscapeJson from './data/landscape-001.json';
 import {fontStack, theme} from './theme';
 import type {LandscapeEpisode, LandscapeScene} from './landscape-types';
@@ -22,8 +22,14 @@ function TopBar({scene, index, count}: {scene: LandscapeScene; index: number; co
   return <><div style={{position: 'absolute', top: 34, left: 56, fontSize: 28, color: '#B7D7E7', fontWeight: 800}}>{scene.chapter}</div><div style={{position: 'absolute', top: 34, right: 56, fontSize: 24, color: '#7BA7B8', fontWeight: 700}}>{index + 1} / {count}</div><div style={{position: 'absolute', top: 78, left: 56, right: 56, height: 6, borderRadius: 999, background: 'rgba(255,255,255,0.13)', overflow: 'hidden'}}><div style={{width: progress, height: '100%', background: '#73D7FF'}} /></div></>;
 }
 
-function ScreenBox({note}: {note?: string}) {
-  return <div style={{width: 1210, height: 682, borderRadius: 22, background: '#F7F9FC', boxShadow: '0 24px 80px rgba(0,0,0,0.32)', border: '6px solid rgba(255,255,255,0.9)', overflow: 'hidden'}}><div style={{height: 42, background: '#E9EEF5', display: 'flex', alignItems: 'center', paddingLeft: 18, gap: 9}}><span style={{width: 13, height: 13, borderRadius: 999, background: '#FF5F57'}} /><span style={{width: 13, height: 13, borderRadius: 999, background: '#FFBD2E'}} /><span style={{width: 13, height: 13, borderRadius: 999, background: '#28C840'}} /></div><div style={{height: 640, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #071B2E, #0B3048)', color: '#DDF6FF', fontSize: 36, lineHeight: 1.45, fontWeight: 900, padding: 70, textAlign: 'center'}}>{note || '这里放电脑录屏或截图'}</div></div>;
+function MediaContent({scene}: {scene: LandscapeScene}) {
+  if (scene.screenMedia && scene.screenMediaType === 'video') return <Video src={staticFile(scene.screenMedia)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />;
+  if (scene.screenMedia && scene.screenMediaType === 'image') return <Img src={staticFile(scene.screenMedia)} style={{width: '100%', height: '100%', objectFit: 'cover'}} />;
+  return <div style={{height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #071B2E, #0B3048)', color: '#DDF6FF', fontSize: 36, lineHeight: 1.45, fontWeight: 900, padding: 70, textAlign: 'center'}}>{scene.screenNote || '这里放电脑录屏或截图'}</div>;
+}
+
+function ScreenBox({scene}: {scene: LandscapeScene}) {
+  return <div style={{width: 1210, height: 682, borderRadius: 22, background: '#F7F9FC', boxShadow: '0 24px 80px rgba(0,0,0,0.32)', border: '6px solid rgba(255,255,255,0.9)', overflow: 'hidden'}}><div style={{height: 42, background: '#E9EEF5', display: 'flex', alignItems: 'center', paddingLeft: 18, gap: 9}}><span style={{width: 13, height: 13, borderRadius: 999, background: '#FF5F57'}} /><span style={{width: 13, height: 13, borderRadius: 999, background: '#FFBD2E'}} /><span style={{width: 13, height: 13, borderRadius: 999, background: '#28C840'}} /></div><div style={{height: 640, background: '#071B2E'}}><MediaContent scene={scene} /></div></div>;
 }
 
 function Callout({text}: {text?: string}) {
@@ -36,7 +42,7 @@ function IntroScene({scene}: {scene: LandscapeScene}) {
 }
 
 function ScreenScene({scene}: {scene: LandscapeScene}) {
-  return <><div style={{position: 'absolute', left: 70, top: 128, width: 520}}><div style={{fontSize: 54, lineHeight: 1.12, color: '#F6FBFF', fontWeight: 1000}}>{scene.title}</div></div><div style={{position: 'absolute', left: 645, top: 160}}><ScreenBox note={scene.screenNote} /></div><Callout text={scene.callout} /></>;
+  return <><div style={{position: 'absolute', left: 70, top: 128, width: 520}}><div style={{fontSize: 54, lineHeight: 1.12, color: '#F6FBFF', fontWeight: 1000}}>{scene.title}</div></div><div style={{position: 'absolute', left: 645, top: 160}}><ScreenBox scene={scene} /></div><Callout text={scene.callout} /></>;
 }
 
 function StepsScene({scene}: {scene: LandscapeScene}) {
