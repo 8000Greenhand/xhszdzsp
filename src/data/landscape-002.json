@@ -1,0 +1,16 @@
+{
+  "title": "AI 做视频，最难的不是剪辑",
+  "subtitle": "普通人 AI 视频流程测试 v0.2",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {"kind": "intro", "durationInFrames": 150, "chapter": "01 / 钩子", "title": "AI 做视频，最难的不是剪辑", "subtitle": "真正难的是：流程不可控", "callout": "别先找一键工具", "caption": "很多人以为 AI 做视频，就是找一个工具一键生成。"},
+    {"kind": "steps", "durationInFrames": 180, "chapter": "02 / 误区", "title": "一键生成为什么不稳定？", "steps": ["中文容易错", "素材容易乱配", "画面和口播对不上", "每次风格都变"], "caption": "但我试下来发现，一键生成最大的问题，是不可控。中文、素材、节奏、画面都容易跑偏。"},
+    {"kind": "steps", "durationInFrames": 210, "chapter": "03 / 正确流程", "title": "稳定的方法，是先拆成 5 个部分", "steps": ["口播稿", "字幕时间轴", "分镜结构", "截图/录屏素材", "固定视频模板"], "caption": "真正稳定的方法，是先把视频拆成口播、字幕、分镜、素材和模板。"},
+    {"kind": "screen", "durationInFrames": 180, "chapter": "04 / 模板化", "title": "所以我先搭了一个视频生成器", "callout": "先固定模板", "screenMedia": "episodes/001/assets/04-project-folder.png", "screenMediaType": "image", "caption": "这不是剪映工程，而是一个可以复用的代码项目。每期只替换内容和素材。"},
+    {"kind": "screen", "durationInFrames": 180, "chapter": "05 / 双模板", "title": "短内容和教程内容分开做", "callout": "竖屏引流，横屏教学", "screenMedia": "episodes/001/assets/02-remotion.png", "screenMediaType": "image", "caption": "现在里面有两个模板：竖屏适合短方法，横屏适合电脑教程。"},
+    {"kind": "screen", "durationInFrames": 180, "chapter": "06 / 结果", "title": "最后用 Remotion 渲染成 MP4", "callout": "稳定输出", "screenMedia": "episodes/001/assets/03-out-folder.png", "screenMediaType": "image", "caption": "模板固定以后，就可以让工具稳定导出视频，而不是每次从零剪。"},
+    {"kind": "summary", "durationInFrames": 150, "chapter": "07 / 总结", "title": "我现在对 AI 视频的理解变了", "bullets": ["不是先追求一键生成", "而是先把流程拆清楚", "再把模板固定下来", "最后逐步自动化"], "caption": "所以 AI 做视频的关键，不是马上追求一键生成，而是先把流程拆清楚。"}
+  ]
+}
