@@ -1,0 +1,52 @@
+{
+  "title": "AI 自动做视频到底怎么跑通",
+  "subtitle": "完整录屏教程模板",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "kind": "intro",
+      "durationInFrames": 120,
+      "chapter": "01 / 开始",
+      "title": "2分钟看懂：AI 自动做视频怎么实现",
+      "subtitle": "不是一键生成，而是把流程拆成模板",
+      "callout": "先看全流程",
+      "caption": "这条视频我想用两分钟，把 AI 自动做视频这件事讲清楚。"
+    },
+    {
+      "kind": "screen",
+      "durationInFrames": 180,
+      "chapter": "02 / 核心流程",
+      "title": "先把内容拆成四份资料",
+      "callout": "稿子、配音、字幕、素材",
+      "screenNote": "这里后续放电脑录屏：项目文件夹和素材结构",
+      "caption": "第一步不是打开剪辑软件，而是先准备口播稿、配音、字幕和截图素材。"
+    },
+    {
+      "kind": "steps",
+      "durationInFrames": 180,
+      "chapter": "03 / 执行方式",
+      "title": "我们用代码把视频生成出来",
+      "steps": ["ChatGPT 负责脚本和分镜", "GitHub 保存模板代码", "Codex 在本地运行项目", "Remotion 渲染出 MP4"],
+      "caption": "ChatGPT 负责设计，GitHub 保存代码，Codex 在本地执行，最后 Remotion 渲染成 MP4。"
+    },
+    {
+      "kind": "screen",
+      "durationInFrames": 180,
+      "chapter": "04 / 操作演示",
+      "title": "每期只替换内容，不重做模板",
+      "callout": "后续会越来越省事",
+      "screenNote": "这里后续放 Remotion Studio 预览画面",
+      "caption": "模板跑通以后，每一期主要就是替换口播、字幕、截图和标题。"
+    },
+    {
+      "kind": "summary",
+      "durationInFrames": 150,
+      "chapter": "05 / 总结",
+      "title": "这套方法适合做什么？",
+      "bullets": ["AI 工具教程", "电脑录屏演示", "知识型小红书视频", "可重复使用的视频模板"],
+      "caption": "所以它最适合 AI 工具教程、电脑录屏演示，以及可重复生产的知识型视频。"
+    }
+  ]
+}
