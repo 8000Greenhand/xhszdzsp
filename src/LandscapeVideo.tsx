@@ -1,4 +1,4 @@
-import {AbsoluteFill, Img, Sequence, Video, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Audio, Img, Sequence, Video, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import landscapeJson from './data/landscape-001.json';
 import {fontStack, theme} from './theme';
 import type {LandscapeEpisode, LandscapeScene} from './landscape-types';
@@ -64,5 +64,5 @@ export function LandscapeTutorialVideo() {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   let start = 0;
-  return <AbsoluteFill style={{background: 'radial-gradient(circle at 75% 25%, #123C55 0%, #07141F 42%, #03080D 100%)', fontFamily: fontStack}}>{episode.scenes.map((scene, index) => {const from = start; start += scene.durationInFrames; const local = Math.max(0, frame - from); const opacity = spring({frame: local, fps, config: {damping: 20, stiffness: 110}}); return <Sequence key={index} from={from} durationInFrames={scene.durationInFrames}><AbsoluteFill style={{opacity}}><TopBar scene={scene} index={index} count={episode.scenes.length} />{renderScene(scene)}<Caption text={scene.caption} /></AbsoluteFill></Sequence>;})}</AbsoluteFill>;
+  return <AbsoluteFill style={{background: 'radial-gradient(circle at 75% 25%, #123C55 0%, #07141F 42%, #03080D 100%)', fontFamily: fontStack}}>{episode.audio && <Audio src={staticFile(episode.audio)} />}{episode.scenes.map((scene, index) => {const from = start; start += scene.durationInFrames; const local = Math.max(0, frame - from); const opacity = spring({frame: local, fps, config: {damping: 20, stiffness: 110}}); return <Sequence key={index} from={from} durationInFrames={scene.durationInFrames}><AbsoluteFill style={{opacity}}><TopBar scene={scene} index={index} count={episode.scenes.length} />{renderScene(scene)}<Caption text={scene.caption} /></AbsoluteFill></Sequence>;})}</AbsoluteFill>;
 }
