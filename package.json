@@ -7,9 +7,11 @@
     "dev": "remotion studio",
     "render:vertical": "remotion render src/index.ts VerticalShortVideo out/vertical-episode-001.mp4",
     "render:landscape": "remotion render src/index.ts LandscapeTutorialVideo out/landscape-episode-001.mp4",
-    "render": "npm run render:vertical && npm run render:landscape",
+    "render:landscape-v2": "remotion render src/index.ts LandscapeTutorialVideoV2 out/landscape-episode-002.mp4",
+    "render": "npm run render:vertical && npm run render:landscape && npm run render:landscape-v2",
     "preview:vertical": "remotion preview src/index.ts VerticalShortVideo",
     "preview:landscape": "remotion preview src/index.ts LandscapeTutorialVideo",
+    "preview:landscape-v2": "remotion preview src/index.ts LandscapeTutorialVideoV2",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
