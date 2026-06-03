@@ -1,0 +1,50 @@
+{
+  "title": "我为什么想做 AI 学习分享账号",
+  "subtitle": "一个普通人的 AI 学习记录",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "scenes": [
+    {
+      "kind": "title",
+      "durationInFrames": 120,
+      "title": "我想记录：AI 怎么帮普通人省时间",
+      "subtitle": "不是技术大神教程，是每天真实学到的一点点",
+      "caption": "我最近有一个想法，想做一个账号，记录 AI 是怎么帮普通人省时间的。"
+    },
+    {
+      "kind": "text",
+      "durationInFrames": 150,
+      "title": "我其实不是技术型选手",
+      "body": "我不会复杂剪辑，也不懂代码。很多工具刚打开的时候，我也会觉得很陌生。",
+      "emphasis": "但我发现，AI 真正有用的地方，是把一件事拆清楚。",
+      "caption": "我不会复杂剪辑，也不懂代码，很多工具刚打开的时候，我也会觉得很陌生。"
+    },
+    {
+      "kind": "steps",
+      "durationInFrames": 180,
+      "title": "它帮我的方式很具体",
+      "steps": [
+        {"label": "整理想法", "detail": "把一堆乱的念头变成结构"},
+        {"label": "拆成步骤", "detail": "告诉我第一步、第二步先做什么"},
+        {"label": "少踩坑", "detail": "提前提醒哪里容易跑偏"}
+      ],
+      "caption": "它不是一下子替我做完所有事，而是帮我整理想法、拆成步骤、少踩坑。"
+    },
+    {
+      "kind": "screenshot",
+      "durationInFrames": 150,
+      "title": "所以我想把过程记录下来",
+      "imageNote": "这里后续放 ChatGPT 帮我拆任务的截图",
+      "body": "每次学到一个有用的方法，就整理成一条普通人也能听懂的小视频。",
+      "caption": "所以我想把自己每天学到的 AI 用法，整理成普通人也能听懂的小视频。"
+    },
+    {
+      "kind": "summary",
+      "durationInFrames": 150,
+      "title": "这个账号会记录三件事",
+      "bullets": ["我今天学到了什么", "AI 帮我解决了什么", "普通人能不能照着用"],
+      "caption": "这个账号会记录我今天学到了什么，AI 帮我解决了什么，以及普通人能不能照着用。"
+    }
+  ]
+}
