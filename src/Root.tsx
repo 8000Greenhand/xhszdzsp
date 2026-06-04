@@ -3,6 +3,7 @@ import {AiLearningVideo, videoConfig} from './Video';
 import {LandscapeTutorialVideo, landscapeVideoConfig} from './LandscapeVideo';
 import {LandscapeTutorialVideoV2, landscapeV2Config} from './LandscapeVideoV2';
 import {RecordingTutorialVideo, recordingVideoConfig} from './RecordingTutorialVideo';
+import {RecordingCutsVideo, recordingCutsConfig} from './RecordingCutsVideo';
 
 export const Root = () => {
   return (
@@ -38,6 +39,14 @@ export const Root = () => {
         fps={recordingVideoConfig.fps}
         width={recordingVideoConfig.width}
         height={recordingVideoConfig.height}
+      />
+      <Composition
+        id="RecordingCutsVideo"
+        component={RecordingCutsVideo}
+        durationInFrames={recordingCutsConfig.durationInFrames}
+        fps={recordingCutsConfig.fps}
+        width={recordingCutsConfig.width}
+        height={recordingCutsConfig.height}
       />
     </>
   );
