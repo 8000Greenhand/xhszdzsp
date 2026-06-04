@@ -1,0 +1,17 @@
+{
+  "title": "AI 做视频，最难的不是剪辑",
+  "subtitle": "录屏主导教程模板 v0.4",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "recording": "episodes/001/assets/screen-demo-obs.mp4",
+  "durationInFrames": 2340,
+  "chapters": [
+    {"time": "00:00", "label": "OBS 录屏测试"},
+    {"time": "00:08", "label": "Remotion 预览"},
+    {"time": "00:18", "label": "模板效果"},
+    {"time": "00:33", "label": "GitHub 仓库"},
+    {"time": "00:45", "label": "回到教程画面"}
+  ],
+  "caption": "AI 做视频不是一键生成，真正要解决的是流程、素材、模板和稳定输出。"
+}
