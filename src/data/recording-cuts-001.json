@@ -1,0 +1,50 @@
+{
+  "title": "AI 做视频，最难的不是剪辑",
+  "subtitle": "录屏分段剪辑模板 v0.5",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "recording": "episodes/001/assets/screen-demo-obs.mp4",
+  "segments": [
+    {
+      "startFrame": 360,
+      "durationInFrames": 180,
+      "chapter": "01 / 先看结果",
+      "title": "AI 做视频，最难的不是剪辑",
+      "caption": "很多人以为 AI 做视频，就是找一个工具一键生成。",
+      "badge": "错误认知"
+    },
+    {
+      "startFrame": 540,
+      "durationInFrames": 210,
+      "chapter": "02 / 真正难点",
+      "title": "真正难的是流程不可控",
+      "caption": "中文、素材、节奏和画面，一旦不可控，视频就很难稳定复用。",
+      "badge": "问题拆解"
+    },
+    {
+      "startFrame": 810,
+      "durationInFrames": 210,
+      "chapter": "03 / 正确流程",
+      "title": "先把视频拆成 5 个部分",
+      "caption": "口播、字幕、分镜、素材、模板，先拆清楚，后面才可能自动化。",
+      "badge": "流程结构"
+    },
+    {
+      "startFrame": 990,
+      "durationInFrames": 180,
+      "chapter": "04 / 项目仓库",
+      "title": "用 GitHub 保存视频生成器",
+      "caption": "模板代码放进仓库后，后面每条视频就不是从零开始。",
+      "badge": "可复用"
+    },
+    {
+      "startFrame": 1350,
+      "durationInFrames": 210,
+      "chapter": "05 / 输出结果",
+      "title": "最后稳定输出成 MP4",
+      "caption": "真正要做的是固定流程，而不是每次临时拼素材。",
+      "badge": "稳定生成"
+    }
+  ]
+}
