@@ -2,6 +2,7 @@ import {Composition} from 'remotion';
 import {AiLearningVideo, videoConfig} from './Video';
 import {LandscapeTutorialVideo, landscapeVideoConfig} from './LandscapeVideo';
 import {LandscapeTutorialVideoV2, landscapeV2Config} from './LandscapeVideoV2';
+import {RecordingTutorialVideo, recordingVideoConfig} from './RecordingTutorialVideo';
 
 export const Root = () => {
   return (
@@ -29,6 +30,14 @@ export const Root = () => {
         fps={landscapeV2Config.fps}
         width={landscapeV2Config.width}
         height={landscapeV2Config.height}
+      />
+      <Composition
+        id="RecordingTutorialVideo"
+        component={RecordingTutorialVideo}
+        durationInFrames={recordingVideoConfig.durationInFrames}
+        fps={recordingVideoConfig.fps}
+        width={recordingVideoConfig.width}
+        height={recordingVideoConfig.height}
       />
     </>
   );
