@@ -1,6 +1,6 @@
 {
   "name": "xhs-ai-video-maker",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "description": "A Remotion-based video generator for Xiaohongshu AI practical tutorial content.",
   "scripts": {
@@ -9,11 +9,13 @@
     "render:landscape": "remotion render src/index.ts LandscapeTutorialVideo out/landscape-episode-001.mp4",
     "render:landscape-v2": "remotion render src/index.ts LandscapeTutorialVideoV2 out/landscape-episode-002.mp4",
     "render:recording": "remotion render src/index.ts RecordingTutorialVideo out/recording-tutorial-001.mp4",
-    "render": "npm run render:vertical && npm run render:landscape && npm run render:landscape-v2 && npm run render:recording",
+    "render:recording-cuts": "remotion render src/index.ts RecordingCutsVideo out/recording-cuts-001.mp4",
+    "render": "npm run render:vertical && npm run render:landscape && npm run render:landscape-v2 && npm run render:recording && npm run render:recording-cuts",
     "preview:vertical": "remotion preview src/index.ts VerticalShortVideo",
     "preview:landscape": "remotion preview src/index.ts LandscapeTutorialVideo",
     "preview:landscape-v2": "remotion preview src/index.ts LandscapeTutorialVideoV2",
     "preview:recording": "remotion preview src/index.ts RecordingTutorialVideo",
+    "preview:recording-cuts": "remotion preview src/index.ts RecordingCutsVideo",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
